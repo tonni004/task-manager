@@ -5,7 +5,7 @@ const isDev = import.meta.env.MODE === 'development';
 
 export const API_URL = isDev
   ? 'http://localhost:3001/tasks'
-  : 'https://your-app.onrender.com/tasks';
+  : 'https://task-manager-q20j.onrender.com/tasks';
 
 export const getTodos = () => axios.get<Todo[]>(API_URL);
 export const createTodo = (todo: Todo) => axios.post<Todo>(API_URL, todo);
