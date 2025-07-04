@@ -45,6 +45,11 @@ input[type='checkbox'] {
     text-align: end;
 }
 
+.EditField {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .ButtonField {
     display: flex;
 }

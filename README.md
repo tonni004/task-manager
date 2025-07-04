@@ -6,8 +6,8 @@ This is a simple web application for managing tasks (ToDo), built as a test assi
 
 ## 🔗 Live Demo
 
-- **Frontend:** [https://tonni004.github.io/task-manager](https://tonni004.github.io/task-manager)
-- **Backend API (json-server):** `http://localhost:3001/tasks` *(local only)*
+- **Frontend:** [https://task-manager004.netlify.app/](https://task-manager004.netlify.app/)
+- **Backend API (json-server):** `http://localhost:3001/tasks` *(local only)* or Render
 
 ---
 

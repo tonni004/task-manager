@@ -31,15 +31,17 @@ export default function TodoItem({ todo, deleteTodo, toggleCompletion, onModalOp
       <Card>
         <CardBody>
           <p className="ItemData">{formatDate(todo.createdAt)}</p>
-          <Button
-            size='sm'
-            className='EditBtn'
-            aria-label="Edit Button"
-            color='default'
-            isIconOnly
-            onPress={() => onModalOpen(todo)}>
-            <EditButton />
-          </Button>
+          <div className='EditField'>
+            <Button
+              size='sm'
+              className='EditBtn'
+              aria-label="Edit Button"
+              color='default'
+              isIconOnly
+              onPress={() => onModalOpen(todo)}>
+              <EditButton />
+            </Button>
+          </div>
 
           <div className='CheckboxField'>
             <Checkbox
