@@ -1,0 +1,59 @@
+@import '../styles/variables.scss';
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.TodoItem{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.CheckboxField label {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.CheckboxDescription {
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+
+  & .Title {
+    margin-bottom: 3px;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+
+  & .Description {
+    font-size: 13px;
+    color: $description-color;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+
+  &.completed {
+    & .Title, & .Description {
+      text-decoration: line-through;
+      color:$completed-task-color;
+    }
+  }
+}
+
+.ItemData {
+    margin-bottom: 15px;
+    color: $data-color;
+    font-size: 12px;
+    text-align: end;
+}
+
+.ButtonField {
+    display: flex;
+}
+
+.EditBtn svg{
+  padding: 9px;
+}
+
+.DeleteBtn {
+    margin-top: 15px;
+    width: 50px;
+}
